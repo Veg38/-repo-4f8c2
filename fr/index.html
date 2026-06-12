@@ -19,6 +19,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/">
   <link rel="stylesheet" href="../assets/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <header class="site-header">
@@ -36,7 +37,20 @@
 
   <main>
     <section class="hero">
+      <svg class="pcb-traces" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M-20 120 H300 L380 200 H700"/>
+        <path d="M-20 320 H180 L260 240 H520 L600 320 H840"/>
+        <path d="M1220 80 H950 L870 160 H640"/>
+        <path d="M-20 540 H240 L320 460 H560"/>
+        <path d="M1220 620 H980 L900 540 H700 L640 480 H460"/>
+        <circle cx="700" cy="200" r="7"/>
+        <circle cx="840" cy="320" r="7"/>
+        <circle cx="640" cy="160" r="7"/>
+        <circle cx="560" cy="460" r="7"/>
+        <circle cx="460" cy="480" r="7"/>
+      </svg>
       <div class="hero-content">
+        <p class="coming-soon">Bientôt sur l'App Store</p>
         <p class="eyebrow">Éditeur PCB pour iPhone et iPad</p>
         <h1>AGBoard - PCBEditor</h1>
         <p class="lead">Ouvrez vos fichiers Gerber, Excellon, ODB++, Eagle et placements de composants. Inspectez des cartes denses, mesurez les clearances, modifiez des formes, transformez des calques et exportez des rapports propres, directement depuis iOS.</p>
@@ -50,21 +64,21 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <h2>Conçu pour la vraie inspection de PCB</h2>
       <ul class="feature-list">
-        <li><strong>Tous vos formats.</strong><br>Gerber RS-274X/X2 (couches internes comprises), perçages Excellon, jobs ODB++ (panneaux dépliés), designs IPC-2581, cartes Eagle, fichiers job Gerber (.gbrjob), netlists IPC-D-356 et placements composants CSV/TXT/POS.</li>
-        <li><strong>Contrôle des calques.</strong><br>Afficher, masquer, réordonner, verrouiller, recolorer, dupliquer et exporter les calques depuis un panneau tactile.</li>
-        <li><strong>Outils d'édition.</strong><br>Déplacer, dupliquer, redimensionner et supprimer des formes, y compris les rectangles arrondis avec rayon d'angle modifiable.</li>
-        <li><strong>Transformations.</strong><br>Miroir, rotation, réinitialisation et panélisation des calques, ou transformation d'un groupe multi-sélectionné.</li>
-        <li><strong>Outils de mesure.</strong><br>Distance centre à centre, dx/dy, angle, milieu, clearance et chevauchement, avec export CSV des mesures.</li>
-        <li><strong>Recherche de composants.</strong><br>Importez vos fichiers composants avec des profils d'analyse, cherchez par référence, valeur ou boîtier, et surlignez les composants top ou bottom.</li>
-        <li><strong>Recherche de nets.</strong><br>Nets issus des netlists IPC-D-356, des jobs ODB++ ou des fichiers IPC-2581 : cherchez un net et surlignez tous ses pads — ou touchez une forme pour révéler son net.</li>
-        <li><strong>Travail rapide.</strong><br>Fichiers récents par appui long sur Open, glisser-déposer depuis l'app Fichiers, et statistiques de carte (dimensions, table des perçages, plus petit foret et piste).</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><strong>Tous vos formats.</strong><br>Gerber RS-274X/X2 (couches internes comprises), perçages Excellon, jobs ODB++ (panneaux dépliés), designs IPC-2581, cartes Eagle, fichiers job Gerber (.gbrjob), netlists IPC-D-356 et placements composants CSV/TXT/POS.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg><strong>Contrôle des calques.</strong><br>Afficher, masquer, réordonner, verrouiller, recolorer, dupliquer et exporter les calques depuis un panneau tactile.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg><strong>Outils d'édition.</strong><br>Déplacer, dupliquer, redimensionner et supprimer des formes, y compris les rectangles arrondis avec rayon d'angle modifiable.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg><strong>Transformations.</strong><br>Miroir, rotation, réinitialisation et panélisation des calques, ou transformation d'un groupe multi-sélectionné.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 17 17 2l5 5L7 22z"/><path d="m7 12 2 2"/><path d="m10 9 2 2"/><path d="m13 6 2 2"/></svg><strong>Outils de mesure.</strong><br>Distance centre à centre, dx/dy, angle, milieu, clearance et chevauchement, avec export CSV des mesures.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><strong>Recherche de composants.</strong><br>Importez vos fichiers composants avec des profils d'analyse, cherchez par référence, valeur ou boîtier, et surlignez les composants top ou bottom.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="m6.6 7.8 4.2 8.4m6.6-8.4-4.2 8.4M7 6h10"/></svg><strong>Recherche de nets.</strong><br>Nets issus des netlists IPC-D-356, des jobs ODB++ ou des fichiers IPC-2581 : cherchez un net et surlignez tous ses pads — ou touchez une forme pour révéler son net.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><strong>Travail rapide.</strong><br>Fichiers récents par appui long sur Open, glisser-déposer depuis l'app Fichiers, et statistiques de carte (dimensions, table des perçages, plus petit foret et piste).</li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <h2>En images</h2>
       <p class="muted">AGBoard sur iPhone et iPad. Les cartes montrées sont des designs publics open-source.</p>
       <div class="shots">
@@ -83,7 +97,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="grid">
         <article class="card">
           <h3>Local par conception</h3>
@@ -99,6 +113,49 @@
         </article>
       </div>
     </section>
+    <section class="section reveal">
+      <h2>Comment ça marche</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>Ouvrir</h3>
+          <p>Choisissez vos fichiers dans Fichiers ou iCloud, glissez-déposez-les sur iPad, ou ouvrez une archive de fabrication complète — toutes les couches se chargent d'un coup.</p>
+        </div>
+        <div class="step">
+          <h3>Inspecter</h3>
+          <p>Zoomez jusqu'au plus petit pad, basculez les couches, mesurez distances et clearances, et trouvez n'importe quel composant ou net en quelques secondes.</p>
+        </div>
+        <div class="step">
+          <h3>Exporter</h3>
+          <p>Partagez des PNG HD, des PDF vectoriels multi-pages, des rapports CSV — ou un fichier projet que votre équipe rouvre tel quel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>Questions fréquentes</h2>
+      <div class="faq">
+        <details>
+          <summary>Quels formats de fichiers sont pris en charge ?</summary>
+          <p>Gerber RS-274X/X2 (couches internes comprises), perçages Excellon, jobs ODB++ avec panneaux dépliés, designs IPC-2581, cartes Eagle .brd, fichiers job Gerber (.gbrjob), netlists IPC-D-356 et placements composants CSV/TXT/POS.</p>
+        </details>
+        <details>
+          <summary>Mes fichiers de conception restent-ils privés ?</summary>
+          <p>Oui. Chaque fichier est analysé et affiché sur votre appareil — rien n'est envoyé sur internet, aucun compte n'est requis et l'app ne contient aucun pistage.</p>
+        </details>
+        <details>
+          <summary>L'application est-elle gratuite ?</summary>
+          <p>AGBoard est gratuite à télécharger et démarre par un essai gratuit. L'utilisation continue nécessite un abonnement mensuel, géré et annulable à tout moment depuis votre compte Apple.</p>
+        </details>
+        <details>
+          <summary>Quels appareils sont compatibles ?</summary>
+          <p>iPhone et iPad sous iOS 17 ou plus récent. Le rendu est accéléré par le GPU (Metal) : même les cartes denses multi-couches restent fluides.</p>
+        </details>
+        <details>
+          <summary>Une version Mac ou Windows est-elle prévue ?</summary>
+          <p>Oui — les versions Mac et Windows sont prévues pour décembre 2026.</p>
+        </details>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -109,5 +166,24 @@
       <a href="terms.html">Conditions</a>
     </nav>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var els = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) {
+        // Anything already on screen shows immediately (no first-paint blink).
+        if (el.getBoundingClientRect().top < window.innerHeight) { el.classList.add('visible'); }
+        else { io.observe(el); }
+      });
+    });
+  </script>
 </body>
 </html>
