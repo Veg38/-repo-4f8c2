@@ -19,6 +19,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/">
   <link rel="stylesheet" href="assets/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <header class="site-header">
@@ -36,7 +37,20 @@
 
   <main>
     <section class="hero">
+      <svg class="pcb-traces" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M-20 120 H300 L380 200 H700"/>
+        <path d="M-20 320 H180 L260 240 H520 L600 320 H840"/>
+        <path d="M1220 80 H950 L870 160 H640"/>
+        <path d="M-20 540 H240 L320 460 H560"/>
+        <path d="M1220 620 H980 L900 540 H700 L640 480 H460"/>
+        <circle cx="700" cy="200" r="7"/>
+        <circle cx="840" cy="320" r="7"/>
+        <circle cx="640" cy="160" r="7"/>
+        <circle cx="560" cy="460" r="7"/>
+        <circle cx="460" cy="480" r="7"/>
+      </svg>
       <div class="hero-content">
+        <p class="coming-soon">Coming soon to the App Store</p>
         <p class="eyebrow">PCB editor for iPhone and iPad</p>
         <h1>AGBoard - PCBEditor</h1>
         <p class="lead">Open Gerber, Excellon, ODB++, Eagle and component placement files. Inspect dense boards, measure clearances, edit shapes, transform layers and export clean reports directly from iOS.</p>
@@ -50,21 +64,21 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <h2>Designed for real PCB inspection</h2>
       <ul class="feature-list">
-        <li><strong>Multiple file formats.</strong><br>Gerber RS-274X/X2 (inner layers included), Excellon drill files, ODB++ jobs, Eagle boards, Gerber job files (.gbrjob), IPC-D-356 netlists and CSV/TXT/POS component placements.</li>
-        <li><strong>Layer control.</strong><br>Show, hide, reorder, lock, recolor, duplicate and export layers from a touch-friendly panel.</li>
-        <li><strong>Editing tools.</strong><br>Move, duplicate, resize and delete shapes, including rounded rectangles and editable corner radius where supported.</li>
-        <li><strong>Transform workflows.</strong><br>Mirror, rotate, reset and panelize layers, or apply transformations to a multi-selection group.</li>
-        <li><strong>Measurement tools.</strong><br>Measure center distance, dx/dy, angle, midpoint, clearance and overlap, then export measurements as CSV.</li>
-        <li><strong>Component search.</strong><br>Import component files with parser profiles, search by reference, value or package, and highlight top or bottom components.</li>
-        <li><strong>Net search.</strong><br>Load an IPC-D-356 netlist, search any net and highlight every one of its pads — or tap a shape to reveal its net.</li>
-        <li><strong>Fast workflow.</strong><br>Recent files on a long-press of Open, drag &amp; drop from the Files app, and board statistics (size, hole table, smallest drill and trace).</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><strong>Multiple file formats.</strong><br>Gerber RS-274X/X2 (inner layers included), Excellon drill files, ODB++ jobs (panels expanded), IPC-2581 designs, Eagle boards, Gerber job files (.gbrjob), IPC-D-356 netlists and CSV/TXT/POS component placements.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg><strong>Layer control.</strong><br>Show, hide, reorder, lock, recolor, duplicate and export layers from a touch-friendly panel.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg><strong>Editing tools.</strong><br>Move, duplicate, resize and delete shapes, including rounded rectangles and editable corner radius where supported.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg><strong>Transform workflows.</strong><br>Mirror, rotate, reset and panelize layers, or apply transformations to a multi-selection group.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 17 17 2l5 5L7 22z"/><path d="m7 12 2 2"/><path d="m10 9 2 2"/><path d="m13 6 2 2"/></svg><strong>Measurement tools.</strong><br>Measure center distance, dx/dy, angle, midpoint, clearance and overlap, then export measurements as CSV.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><strong>Component search.</strong><br>Import component files with parser profiles, search by reference, value or package, and highlight top or bottom components.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="m6.6 7.8 4.2 8.4m6.6-8.4-4.2 8.4M7 6h10"/></svg><strong>Net search.</strong><br>Nets from IPC-D-356 netlists, ODB++ jobs or IPC-2581 files: search any net and highlight every one of its pads — or tap a shape to reveal its net.</li>
+        <li><svg class="f-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><strong>Fast workflow.</strong><br>Recent files on a long-press of Open, drag &amp; drop from the Files app, and board statistics (size, hole table, smallest drill and trace).</li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <h2>See it in action</h2>
       <p class="muted">AGBoard on iPhone and iPad. Boards shown are public open-source example designs.</p>
       <div class="shots">
@@ -83,7 +97,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="grid">
         <article class="card">
           <h3>Local by design</h3>
@@ -99,6 +113,49 @@
         </article>
       </div>
     </section>
+    <section class="section reveal">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>Open</h3>
+          <p>Pick files from the Files app or iCloud, drag &amp; drop them on iPad, or open a whole fabrication archive — every layer loads at once.</p>
+        </div>
+        <div class="step">
+          <h3>Inspect</h3>
+          <p>Zoom to the smallest pad, toggle layers, measure distances and clearances, and find any component or net in seconds.</p>
+        </div>
+        <div class="step">
+          <h3>Export</h3>
+          <p>Share HD PNG images, multi-page vector PDFs, CSV reports — or a project file your team can reopen as-is.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Which file formats are supported?</summary>
+          <p>Gerber RS-274X/X2 (inner layers included), Excellon drill files, ODB++ jobs with panels expanded, IPC-2581 designs, Eagle .brd boards, Gerber job files (.gbrjob), IPC-D-356 netlists and CSV/TXT/POS component placements.</p>
+        </details>
+        <details>
+          <summary>Are my design files private?</summary>
+          <p>Yes. Every file is parsed and rendered on your device — nothing is uploaded, no account is required and the app contains no tracking.</p>
+        </details>
+        <details>
+          <summary>Is the app free?</summary>
+          <p>AGBoard is free to download and starts with a free trial. Continued use requires a monthly subscription, managed and cancellable anytime through your Apple Account.</p>
+        </details>
+        <details>
+          <summary>Which devices are supported?</summary>
+          <p>iPhone and iPad running iOS 17 or later. Rendering is GPU-accelerated (Metal), so even dense multi-layer boards stay smooth.</p>
+        </details>
+        <details>
+          <summary>Is a Mac or Windows version planned?</summary>
+          <p>Yes — Mac and Windows versions are planned for December 2026.</p>
+        </details>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -109,5 +166,24 @@
       <a href="terms.html">Terms</a>
     </nav>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var els = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) {
+        // Anything already on screen shows immediately (no first-paint blink).
+        if (el.getBoundingClientRect().top < window.innerHeight) { el.classList.add('visible'); }
+        else { io.observe(el); }
+      });
+    });
+  </script>
 </body>
 </html>
