@@ -17,14 +17,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/">
+  <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/">
-  <link rel="stylesheet" href="assets/styles.css?v=20260614">
+  <link rel="stylesheet" href="assets/styles.css?v=20260615">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html">
-      <img src="assets/app-icon.png" alt="">
+      <img src="assets/apple-touch-icon.png" alt="" width="34" height="34">
       <span>AGBoard - PCBEditor</span>
     </a>
     <nav class="nav" aria-label="Main navigation">
@@ -48,6 +49,13 @@
         <circle cx="640" cy="160" r="7"/>
         <circle cx="560" cy="460" r="7"/>
         <circle cx="460" cy="480" r="7"/>
+        <g class="sparks">
+          <path d="M-20 120 H300 L380 200 H700"/>
+          <path d="M-20 320 H180 L260 240 H520 L600 320 H840"/>
+          <path d="M1220 80 H950 L870 160 H640"/>
+          <path d="M-20 540 H240 L320 460 H560"/>
+          <path d="M1220 620 H980 L900 540 H700 L640 480 H460"/>
+        </g>
       </svg>
       <div class="hero-content">
         <p class="coming-soon">Coming soon to the App Store</p>
@@ -83,15 +91,15 @@
       <p class="muted">AGBoard on iPhone and iPad. Boards shown are public open-source example designs.</p>
       <div class="shots">
         <figure class="shot">
-          <img src="assets/shots/iphone-board.png" alt="A multi-layer PCB rendered in realistic colors on iPhone" loading="lazy">
+          <img src="assets/shots/iphone-board.png" alt="A multi-layer PCB rendered in realistic colors on iPhone" loading="lazy" width="349" height="760">
           <figcaption>Realistic multi-layer view</figcaption>
         </figure>
         <figure class="shot">
-          <img src="assets/shots/iphone-grid.png" alt="A PCB with grid and reference designators on iPhone" loading="lazy">
+          <img src="assets/shots/iphone-grid.png" alt="A PCB with grid and reference designators on iPhone" loading="lazy" width="349" height="760">
           <figcaption>Grid, silkscreen and reference designators</figcaption>
         </figure>
         <figure class="shot">
-          <img src="assets/shots/ipad-board.png" alt="A multi-layer PCB with toolbar on iPad" loading="lazy">
+          <img src="assets/shots/ipad-board.png" alt="A multi-layer PCB with toolbar on iPad" loading="lazy" width="570" height="760">
           <figcaption>Full inspection workspace on iPad</figcaption>
         </figure>
       </div>
@@ -118,7 +126,7 @@
       <div class="steps">
         <div class="step">
           <h3>Open</h3>
-          <p>Pick files from the Files app or iCloud, drag &amp; drop them on iPad, or open a whole fabrication archive — every layer loads at once.</p>
+          <p>On both iPhone and iPad, open files from the Files app or iCloud — a single file or a whole fabrication archive, every layer at once. On iPad you can also drag &amp; drop them straight onto the canvas.</p>
         </div>
         <div class="step">
           <h3>Inspect</h3>
@@ -166,24 +174,6 @@
       <a href="terms.html">Terms</a>
     </nav>
   </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var els = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
-      if (!('IntersectionObserver' in window)) {
-        els.forEach(function (el) { el.classList.add('visible'); });
-        return;
-      }
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-        });
-      }, { threshold: 0.12 });
-      els.forEach(function (el) {
-        // Anything already on screen shows immediately (no first-paint blink).
-        if (el.getBoundingClientRect().top < window.innerHeight) { el.classList.add('visible'); }
-        else { io.observe(el); }
-      });
-    });
-  </script>
+  <script src="assets/site.js?v=20260615" defer></script>
 </body>
 </html>

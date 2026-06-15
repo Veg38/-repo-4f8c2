@@ -87,6 +87,7 @@ a {
     linear-gradient(90deg, rgba(7, 16, 11, 0.96) 0%, rgba(7, 16, 11, 0.86) 42%, rgba(7, 16, 11, 0.34) 100%),
     url("./app-preview.png") right center / auto 118% no-repeat,
     var(--black);
+  animation: kenburns 34s ease-in-out infinite alternate;
 }
 
 .hero-content {
@@ -319,6 +320,7 @@ h3 {
       linear-gradient(180deg, rgba(7, 16, 11, 0.22) 0%, rgba(7, 16, 11, 0.92) 58%, rgba(7, 16, 11, 0.98) 100%),
       url("./app-preview.png") center top / auto 78% no-repeat,
       var(--black);
+    animation: none;
   }
 
   .grid,
@@ -412,7 +414,7 @@ h3 {
   pointer-events: none;
   opacity: 0.5;
 }
-.pcb-traces path {
+.pcb-traces > path {
   fill: none;
   stroke: var(--green);
   stroke-width: 2;
@@ -421,20 +423,20 @@ h3 {
   stroke-dashoffset: 1400;
   animation: trace-draw 3.2s ease-out forwards;
 }
-.pcb-traces circle {
+.pcb-traces > circle {
   fill: var(--green);
   opacity: 0;
   animation: pad-pop 0.5s ease-out forwards;
 }
-.pcb-traces path:nth-of-type(2) { animation-delay: 0.35s; }
-.pcb-traces path:nth-of-type(3) { animation-delay: 0.7s; }
-.pcb-traces path:nth-of-type(4) { animation-delay: 1.05s; }
-.pcb-traces path:nth-of-type(5) { animation-delay: 1.4s; }
-.pcb-traces circle:nth-of-type(1) { animation-delay: 2.2s; }
-.pcb-traces circle:nth-of-type(2) { animation-delay: 2.45s; }
-.pcb-traces circle:nth-of-type(3) { animation-delay: 2.7s; }
-.pcb-traces circle:nth-of-type(4) { animation-delay: 2.95s; }
-.pcb-traces circle:nth-of-type(5) { animation-delay: 3.2s; }
+.pcb-traces > path:nth-of-type(2) { animation-delay: 0.35s; }
+.pcb-traces > path:nth-of-type(3) { animation-delay: 0.7s; }
+.pcb-traces > path:nth-of-type(4) { animation-delay: 1.05s; }
+.pcb-traces > path:nth-of-type(5) { animation-delay: 1.4s; }
+.pcb-traces > circle:nth-of-type(1) { animation-delay: 2.2s; }
+.pcb-traces > circle:nth-of-type(2) { animation-delay: 2.45s; }
+.pcb-traces > circle:nth-of-type(3) { animation-delay: 2.7s; }
+.pcb-traces > circle:nth-of-type(4) { animation-delay: 2.95s; }
+.pcb-traces > circle:nth-of-type(5) { animation-delay: 3.2s; }
 @keyframes trace-draw {
   to { stroke-dashoffset: 0; }
 }
@@ -534,9 +536,98 @@ html.js .reveal.visible {
 
 /* Accessibility: no movement for users who opted out */
 @media (prefers-reduced-motion: reduce) {
-  .pcb-traces path { animation: none; stroke-dashoffset: 0; }
-  .pcb-traces circle { animation: none; opacity: 0.9; }
+  .pcb-traces > path { animation: none; stroke-dashoffset: 0; }
+  .pcb-traces > circle { animation: none; opacity: 0.9; }
   .coming-soon::before { animation: none; }
   html.js .reveal { opacity: 1; transform: none; transition: none; }
   .button, .card, .feature-list li, .shot img, .step { transition: none; }
+}
+
+/* ===== Animations 2026-06-15 (all CSS; disabled under reduced-motion below) ===== */
+
+/* Hero: slow Ken Burns zoom of the board IMAGE layer only (gradient & colour
+   layers keep size 'auto'); image stays in the element background, which renders
+   reliably everywhere. */
+@keyframes kenburns {
+  from { background-size: auto, auto 118%, auto; }
+  to   { background-size: auto, auto 130%, auto; }
+}
+
+/* "Current" sparks travelling along the PCB traces (after they draw in) */
+.pcb-traces .sparks path {
+  fill: none;
+  stroke: #cfffe0;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 5px rgba(120, 255, 175, 0.9));
+  stroke-dasharray: 22 4000;
+  stroke-dashoffset: 0;
+  opacity: 0;
+  animation: spark-run 3.6s linear infinite;
+}
+.pcb-traces .sparks path:nth-child(1) { animation-delay: 3.4s; }
+.pcb-traces .sparks path:nth-child(2) { animation-delay: 4.1s; }
+.pcb-traces .sparks path:nth-child(3) { animation-delay: 4.8s; }
+.pcb-traces .sparks path:nth-child(4) { animation-delay: 5.5s; }
+.pcb-traces .sparks path:nth-child(5) { animation-delay: 6.2s; }
+@keyframes spark-run {
+  0%   { stroke-dashoffset: 0;     opacity: 0; }
+  8%   { opacity: 1; }
+  92%  { opacity: 1; }
+  100% { stroke-dashoffset: -1400; opacity: 0; }
+}
+
+/* Staggered entrance of list/card/step/shot items inside a revealed section */
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+html.js .reveal.visible .feature-list li,
+html.js .reveal.visible .grid .card,
+html.js .reveal.visible .steps .step,
+html.js .reveal.visible .shots .shot { animation: rise 0.5s ease both; }
+html.js .reveal.visible .feature-list li:nth-child(1), html.js .reveal.visible .grid .card:nth-child(1), html.js .reveal.visible .steps .step:nth-child(1), html.js .reveal.visible .shots .shot:nth-child(1) { animation-delay: 0s; }
+html.js .reveal.visible .feature-list li:nth-child(2), html.js .reveal.visible .grid .card:nth-child(2), html.js .reveal.visible .steps .step:nth-child(2), html.js .reveal.visible .shots .shot:nth-child(2) { animation-delay: 0.06s; }
+html.js .reveal.visible .feature-list li:nth-child(3), html.js .reveal.visible .grid .card:nth-child(3), html.js .reveal.visible .steps .step:nth-child(3), html.js .reveal.visible .shots .shot:nth-child(3) { animation-delay: 0.12s; }
+html.js .reveal.visible .feature-list li:nth-child(4), html.js .reveal.visible .grid .card:nth-child(4) { animation-delay: 0.18s; }
+html.js .reveal.visible .feature-list li:nth-child(5) { animation-delay: 0.24s; }
+html.js .reveal.visible .feature-list li:nth-child(6) { animation-delay: 0.30s; }
+html.js .reveal.visible .feature-list li:nth-child(7) { animation-delay: 0.36s; }
+html.js .reveal.visible .feature-list li:nth-child(8) { animation-delay: 0.42s; }
+
+/* Sheen sweep across primary/secondary buttons */
+.button { position: relative; overflow: hidden; }
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent 0%, rgba(255, 255, 255, 0.35) 50%, transparent 100%);
+  transform: skewX(-18deg);
+  pointer-events: none;
+  animation: sheen 6s ease-in-out infinite;
+}
+@keyframes sheen { 0% { left: -75%; } 14% { left: 130%; } 100% { left: 130%; } }
+
+/* "How it works" number badges pop in on reveal */
+html.js .reveal.visible .step::before { animation: badge-pop 0.5s ease both; animation-delay: 0.1s; }
+@keyframes badge-pop { 0% { transform: scale(0); } 65% { transform: scale(1.15); } 100% { transform: scale(1); } }
+
+/* FAQ answer fades/slides in softly when opened */
+.faq details[open] p { animation: faq-open 0.28s ease; }
+@keyframes faq-open { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+
+/* Sticky header gains a subtle shadow once the page is scrolled */
+.site-header { transition: box-shadow 0.25s ease, background 0.25s ease; }
+.site-header.scrolled { background: rgba(245, 247, 244, 0.98); box-shadow: 0 6px 20px rgba(7, 16, 11, 0.10); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero { animation: none; }
+  .pcb-traces .sparks path { animation: none; opacity: 0; }
+  .button::after { animation: none; opacity: 0; }
+  html.js .reveal.visible .feature-list li,
+  html.js .reveal.visible .grid .card,
+  html.js .reveal.visible .steps .step,
+  html.js .reveal.visible .shots .shot { animation: none; }
+  html.js .reveal.visible .step::before { animation: none; }
+  .faq details[open] p { animation: none; }
 }
