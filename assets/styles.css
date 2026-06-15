@@ -631,3 +631,76 @@ html.js .reveal.visible .step::before { animation: badge-pop 0.5s ease both; ani
   html.js .reveal.visible .step::before { animation: none; }
   .faq details[open] p { animation: none; }
 }
+
+/* ===== Animations 2026-06-16 : scroll bar, icon draw-in, nav underline, tilt ===== */
+
+/* #2 Scroll progress bar (element injected by site.js) */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, var(--green), #7fe6a3);
+  z-index: 50;
+  pointer-events: none;
+  transition: width 0.08s linear;
+}
+
+/* #3 Feature icons draw themselves in when their section is revealed */
+html.js .f-icon path,
+html.js .f-icon polyline,
+html.js .f-icon polygon,
+html.js .f-icon rect,
+html.js .f-icon circle {
+  stroke-dasharray: 120;
+  stroke-dashoffset: 120;
+}
+html.js .reveal.visible .f-icon path,
+html.js .reveal.visible .f-icon polyline,
+html.js .reveal.visible .f-icon polygon,
+html.js .reveal.visible .f-icon rect,
+html.js .reveal.visible .f-icon circle {
+  animation: draw-icon 0.85s ease forwards;
+}
+@keyframes draw-icon { to { stroke-dashoffset: 0; } }
+
+/* #4 Animated underline on nav links */
+.nav a {
+  position: relative;
+}
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 100%;
+  background: var(--green);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+}
+.nav a:hover::after { transform: scaleX(1); }
+
+/* #6 Subtle 3D tilt on gallery shots (transform set by site.js on pointer) */
+.shot {
+  transition: transform 0.15s ease, box-shadow 0.25s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .f-icon path,
+  html.js .f-icon polyline,
+  html.js .f-icon polygon,
+  html.js .f-icon rect,
+  html.js .f-icon circle { stroke-dashoffset: 0; }
+  html.js .reveal.visible .f-icon path,
+  html.js .reveal.visible .f-icon polyline,
+  html.js .reveal.visible .f-icon polygon,
+  html.js .reveal.visible .f-icon rect,
+  html.js .reveal.visible .f-icon circle { animation: none; }
+  .scroll-progress { transition: none; }
+  .nav a::after { transition: none; }
+}
