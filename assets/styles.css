@@ -370,7 +370,7 @@ h3 {
   color: var(--green);
 }
 
-/* "Coming soon" pill in the hero */
+/* App Store availability pill in the hero */
 .coming-soon {
   display: inline-flex;
   align-items: center;
