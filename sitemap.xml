@@ -1,52 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://agboard-app.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/"/>
-    <lastmod>2026-08-01</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://agboard-app.com/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/support.html"/>
-    <lastmod>2026-08-01</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://agboard-app.com/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/privacy.html"/>
-    <lastmod>2026-08-01</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://agboard-app.com/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/terms.html"/>
-    <lastmod>2026-08-01</lastmod>
-    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-grid.png</image:loc></image:image>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-3d.png</image:loc></image:image>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/ipad-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
     <loc>https://agboard-app.com/fr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/"/>
-    <lastmod>2026-08-01</lastmod>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-grid.png</image:loc></image:image>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-3d.png</image:loc></image:image>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/ipad-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/support.html"/>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
     <loc>https://agboard-app.com/fr/support.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/support.html"/>
-    <lastmod>2026-08-01</lastmod>
-    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/support.html"/>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/privacy.html"/>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
     <loc>https://agboard-app.com/fr/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/privacy.html"/>
-    <lastmod>2026-08-01</lastmod>
-    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/privacy.html"/>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/terms.html"/>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
     <loc>https://agboard-app.com/fr/terms.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/terms.html"/>
-    <lastmod>2026-08-01</lastmod>
-    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/terms.html"/>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/legal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/legal.html"/>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/legal.html"/>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/gerber-viewer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/gerber-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-gerber.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/gerber-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/visionneuse-gerber.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/gerber-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-gerber.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/gerber-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/odb-viewer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/odb-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-odb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/odb-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/visionneuse-odb.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/odb-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-odb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/odb-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/kicad-viewer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/kicad-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-kicad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/kicad-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/visionneuse-kicad.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/kicad-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-kicad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/kicad-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/ipc-2581-viewer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/ipc-2581-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-ipc-2581.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/ipc-2581-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/visionneuse-ipc-2581.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/ipc-2581-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-ipc-2581.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/ipc-2581-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/dxf-viewer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/dxf-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-dxf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/dxf-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/visionneuse-dxf.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/dxf-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-dxf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/dxf-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/boardview-viewer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/boardview-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-boardview.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/boardview-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-grid.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/visionneuse-boardview.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/boardview-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-boardview.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/boardview-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-grid.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/pcb-viewer-iphone-ipad.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/pcb-viewer-iphone-ipad.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-pcb-iphone-ipad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/pcb-viewer-iphone-ipad.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/ipad-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/visionneuse-pcb-iphone-ipad.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/pcb-viewer-iphone-ipad.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-pcb-iphone-ipad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/pcb-viewer-iphone-ipad.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/ipad-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/3d-pcb-viewer.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/3d-pcb-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visualisation-pcb-3d.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/3d-pcb-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-3d.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/visualisation-pcb-3d.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/3d-pcb-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visualisation-pcb-3d.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/3d-pcb-viewer.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-3d.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/pcb-component-net-search.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/pcb-component-net-search.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/recherche-composants-nets-pcb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/pcb-component-net-search.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-grid.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/recherche-composants-nets-pcb.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/pcb-component-net-search.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/recherche-composants-nets-pcb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/pcb-component-net-search.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-grid.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/pcb-measure-edit-panelize.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/pcb-measure-edit-panelize.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/mesurer-modifier-paneliser-pcb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/pcb-measure-edit-panelize.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/mesurer-modifier-paneliser-pcb.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/pcb-measure-edit-panelize.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/mesurer-modifier-paneliser-pcb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/pcb-measure-edit-panelize.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/shots/iphone-board.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/press.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/press.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/presse.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/press.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/press/video-thumbnail.jpg</image:loc></image:image>
+    <image:image><image:loc>https://agboard-app.com/assets/press/app-icon-1024.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/presse.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/press.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/presse.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/press.html"/>
+    <image:image><image:loc>https://agboard-app.com/assets/press/video-thumbnail.jpg</image:loc></image:image>
+    <image:image><image:loc>https://agboard-app.com/assets/press/app-icon-1024.png</image:loc></image:image>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/video.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/video.html"/>
+    <video:video>
+      <video:thumbnail_loc>https://agboard-app.com/assets/video/agboard-overview.jpg</video:thumbnail_loc>
+      <video:title>AGBoard PCB viewer and editor product tour</video:title>
+      <video:description>See AGBoard control PCB layers, measure pads, edit shapes, panelize a board, add annotations, find components and follow nets.</video:description>
+      <video:content_loc>https://agboard-app.com/assets/video/agboard-overview.mp4</video:content_loc>
+      <video:duration>74</video:duration>
+      <video:publication_date>2026-08-09T23:03:00+02:00</video:publication_date>
+    </video:video>
+    <lastmod>2026-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://agboard-app.com/fr/video.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agboard-app.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agboard-app.com/video.html"/>
+    <video:video>
+      <video:thumbnail_loc>https://agboard-app.com/assets/video/agboard-overview.jpg</video:thumbnail_loc>
+      <video:title>AGBoard PCB viewer and editor product tour</video:title>
+      <video:description>See AGBoard control PCB layers, measure pads, edit shapes, panelize a board, add annotations, find components and follow nets.</video:description>
+      <video:content_loc>https://agboard-app.com/assets/video/agboard-overview.mp4</video:content_loc>
+      <video:duration>74</video:duration>
+      <video:publication_date>2026-08-09T23:03:00+02:00</video:publication_date>
+    </video:video>
+    <lastmod>2026-08-23</lastmod>
   </url>
 </urlset>

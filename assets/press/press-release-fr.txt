@@ -1,0 +1,32 @@
+AGBoard apporte l'inspection et la modification professionnelles de PCB sur iPhone et iPad
+
+AGBoard - PCBEditor est disponible dans l'App Store et propose aux ingénieurs
+électroniciens, techniciens de réparation et professionnels du PCB un espace
+de travail tactile pour ouvrir, inspecter et modifier les données d'une carte
+loin d'un poste informatique.
+
+L'application lit notamment les formats Gerber X2 et X3, Excellon, ODB++,
+IPC-2581, KiCad, Altium, DXF, Eagle, Landrex BoardView, IPC-D-356 et les fichiers
+de placement de composants. L'utilisateur peut inspecter chaque couche,
+rechercher composants et nets nommés, mesurer entre pads ou formes, ajouter des
+annotations de revue, modifier les géométries prises en charge, panéliser une
+carte et exporter images, PDF et rapports CSV.
+
+Une vue 3D interactive reconstruit le profil, l'épaisseur, le cuivre, les
+perçages et les composants placés disponibles. La carte peut être tournée,
+zoomée et retournée afin d'inspecter ses deux faces.
+
+Les fichiers PCB sont analysés et affichés localement sur l'appareil. Ils ne
+sont pas envoyés sur un serveur AGBoard et aucun compte AGBoard n'est requis.
+L'application convient ainsi aux conceptions confidentielles consultées à
+l'établi, près d'un équipement de production ou pendant une inspection terrain.
+
+AGBoard est disponible sur les iPhone et iPad sous iOS ou iPadOS 17 ou version
+ultérieure. Le téléchargement inclut cinq ouvertures de fichiers avant qu'un
+abonnement AGBoard Pro mensuel ou annuel soit requis.
+
+App Store : https://apps.apple.com/app/id6784736690
+Vidéo : https://agboard-app.com/fr/video.html
+Espace presse : https://agboard-app.com/fr/presse.html
+Contact média : support@agboard-app.com
+

@@ -1,0 +1,50 @@
+AGBOARD - PCBEDITOR: FACT SHEET
+
+Product
+AGBoard - PCBEditor
+
+Category
+Professional PCB viewer and editor
+
+Availability
+Apple App Store for iPhone and iPad
+https://apps.apple.com/app/id6784736690
+
+System requirement
+iOS 17 or later / iPadOS 17 or later
+
+Languages
+English and French
+
+Access model
+Free download with five file openings included. AGBoard Pro monthly or annual
+subscription required afterwards.
+
+Primary audiences
+Electronics engineers, PCB designers, repair technicians, manufacturing teams,
+quality inspectors, field technicians and electronics students.
+
+Principal formats
+Gerber RS-274X/X2/X3, Gerber job, GBX, Excellon, ODB++, IPC-2581, IPC-D-356,
+KiCad, Altium, AutoCAD ASCII DXF, Eagle, Landrex BoardView and component
+placement files.
+
+Key capabilities
+Layer inspection and control; interactive 3D view; component and net search;
+physical copper tracing; pad-to-pad and shape-to-shape measurements; annotations;
+supported geometry editing; layer transformations; panelization; source-format
+save where supported; PNG, vector PDF, CSV and print exports.
+
+Privacy
+PCB parsing and rendering are performed locally. Board files are not uploaded
+to an AGBoard server. No AGBoard account is required.
+
+Website
+https://agboard-app.com
+
+Product video
+https://agboard-app.com/video.html
+
+Media contact
+support@agboard-app.com
+

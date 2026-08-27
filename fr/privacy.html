@@ -3,24 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Politique de confidentialité - AGBoard - PCBEditor</title>
-  <meta name="description" content="Politique de confidentialité d'AGBoard - PCBEditor. Vos fichiers PCB sont traités sur votre appareil. Aucun pistage, aucune collecte de données.">
+  <title>Confidentialité AGBoard | Fichiers PCB traités localement</title>
+  <meta name="description" content="Découvrez comment AGBoard protège vos fichiers PCB par un traitement sur l'appareil, sans pistage ni collecte de données personnelles.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <meta name="theme-color" content="#0b0d12">
   <link rel="canonical" href="https://agboard-app.com/fr/privacy.html">
+  <meta property="og:title" content="Confidentialité AGBoard | Fichiers PCB traités localement">
+  <meta property="og:description" content="Vos fichiers PCB restent sur votre appareil. AGBoard ne contient aucun pistage et ne collecte aucune donnée personnelle.">
+  <meta property="og:url" content="https://agboard-app.com/fr/privacy.html">
+  <meta property="og:site_name" content="AGBoard - PCBEditor">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://agboard-app.com/assets/app-preview.png">
+  <meta property="og:image:alt" content="Visionneuse et éditeur PCB AGBoard sur iPhone">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Confidentialité AGBoard | Fichiers PCB traités localement">
+  <meta name="twitter:description" content="Vos fichiers PCB restent sur votre appareil, sans pistage ni collecte de données personnelles.">
+  <meta name="twitter:image" content="https://agboard-app.com/assets/app-preview.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png?v=20260801">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png?v=20260801">
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/privacy.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/privacy.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/privacy.html">
-  <link rel="stylesheet" href="../assets/styles.css?v=20260725">
+  <link rel="stylesheet" href="../assets/styles.css?v=20260823">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">
+    <a class="brand" href="./">
       <img src="../assets/apple-touch-icon.png?v=20260801" alt="" width="34" height="34">
       <span>AGBoard - PCBEditor</span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
+      <a href="./">Accueil</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Confidentialité</a>
       <a href="../privacy.html" lang="en" aria-label="English version">EN</a>
@@ -30,20 +45,25 @@
   <main class="section narrow legal-page">
     <p class="eyebrow">Confidentialité</p>
     <h1>Politique de confidentialité</h1>
-    <p class="lead muted">Dernière mise à jour : 25 juillet 2026</p>
+    <p class="lead muted">Dernière mise à jour : 16 août 2026</p>
 
     <section>
-      <p>AGBoard - PCBEditor (« l'app ») est conçue pour fonctionner entièrement sur votre appareil. Nous ne collectons, ne pistons, ne vendons ni ne partageons aucune donnée personnelle. Cette page explique ce que cela signifie en pratique.</p>
+      <p>AGBoard - PCBEditor (« l'app ») traite vos fichiers PCB entièrement sur votre appareil. Nous ne collectons, ne pistons, ne vendons ni ne partageons aucune donnée personnelle. Cette page décrit l'usage réseau limité de l'app et les données qui restent locales.</p>
     </section>
 
     <section>
-      <h2>Données collectées</h2>
-      <p><strong>Aucune.</strong> L'app ne collecte aucune donnée personnelle et ne contient aucun SDK d'analyse, de publicité ou de pistage tiers.</p>
+      <h2>Données et pistage</h2>
+      <p>L'app ne collecte aucune donnée personnelle et ne contient aucun SDK d'analyse, de publicité ou de pistage tiers. Elle ne crée ni compte AGBoard ni identifiant publicitaire.</p>
     </section>
 
     <section>
       <h2>Vos fichiers PCB</h2>
-      <p>Les fichiers Gerber, Excellon, DXF, ODB++, Eagle, netlists et placements de composants que vous ouvrez sont lus et traités localement sur votre iPhone ou iPad. Ils ne sont jamais transmis à nous ni à un tiers. Une fois l'accès App Store vérifié, l'affichage et la modification de vos cartes n'utilisent aucun serveur AGBoard.</p>
+      <p>Les fichiers Gerber, Excellon, DXF, ODB++, Eagle, Landrex BoardView, netlists et placements de composants que vous ouvrez sont lus et traités localement sur votre iPhone ou iPad. Ils ne sont jamais transmis à nous ni à un tiers. Une fois l'accès App Store vérifié, l'affichage et la modification de vos cartes n'utilisent aucun serveur AGBoard.</p>
+    </section>
+
+    <section>
+      <h2>Vérification de version</h2>
+      <p>Lorsque l'app démarre ou redevient active, elle demande <code>https://agboard-app.com/version.json</code> uniquement pour comparer la version installée à la version minimale prise en charge. La requête ne contient aucun fichier PCB, aucune donnée de compte ou de paiement, ni identifiant utilisé pour l'analyse ou la publicité. Comme pour toute connexion HTTPS, l'hébergeur reçoit l'adresse IP nécessaire pour renvoyer le fichier ; AGBoard n'utilise pas cette requête à des fins de pistage.</p>
     </section>
 
     <section>
@@ -72,6 +92,25 @@
     </section>
 
     <section>
+      <h2>Vos droits</h2>
+      <!-- L'identité du responsable figure sur les mentions légales : garder les deux à jour. -->
+      <p>Le responsable du traitement limité décrit ci-dessus est l'éditeur indiqué sur la page
+        <a href="mentions-legales.html">mentions légales</a>.</p>
+      <p>La vérification de version passe par HTTPS, et l'hébergeur enregistre dans ses propres
+        journaux l'adresse IP nécessaire pour renvoyer le fichier. C'est la seule donnée
+        personnelle en jeu ; sa base légale est notre intérêt légitime à vous signaler qu'une
+        mise à jour est requise, et elle n'est conservée que pendant la durée appliquée par
+        l'hébergeur à ses journaux. Nous ne consultons pas ces journaux, ne les recoupons avec
+        rien et ne nous en servons pas pour vous identifier.</p>
+      <p>Lorsque le RGPD ou une loi équivalente vous est applicable, vous pouvez demander
+        l'accès à vos données, leur rectification ou leur effacement, la limitation du
+        traitement, vous y opposer, et en demander la portabilité. Écrivez à
+        <a href="mailto:support@agboard-app.com">support@agboard-app.com</a> ; nous répondons à
+        l'adresse depuis laquelle vous écrivez, faute de compte permettant de vous identifier.</p>
+      <p>Vous avez également le droit d'introduire une réclamation auprès d'une autorité de
+        contrôle. En France, il s'agit de la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+    </section>
+    <section>
       <h2>Évolution de cette politique</h2>
       <p>Si cette politique change, nous mettrons cette page à jour et réviserons la date ci-dessus.</p>
     </section>
@@ -85,10 +124,11 @@
   <footer class="site-footer">
     <div>Copyright 2026 AGBoard. Tous droits réservés.</div>
     <nav aria-label="Navigation pied de page">
-      <a href="index.html">Accueil</a>
+      <a href="./">Accueil</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Confidentialité</a>
       <a href="terms.html">Conditions</a>
+      <a href="mentions-legales.html">Mentions légales</a>
     </nav>
   </footer>
   <script src="../assets/site.js?v=20260725" defer></script>
