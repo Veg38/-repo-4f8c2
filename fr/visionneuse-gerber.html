@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/gerber-viewer.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/gerber-viewer.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-gerber.html">
-  <link rel="stylesheet" href="../assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="../assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -121,6 +121,7 @@
           <li><code>.gko</code></li>
           <li><code>.gm1</code></li>
           <li><code>.gbrjob</code></li>
+          <li><code>.phd</code></li>
         </ul>
         <div class="actions">
           <a href="https://apps.apple.com/app/id6784736690" aria-label="Télécharger AGBoard dans l'App Store"><img src="../assets/app-store-badge.svg" alt="Télécharger dans l'App Store" height="46"></a>
@@ -132,7 +133,7 @@
     <section class="section format-copy reveal">
       <h2>Un espace mobile pour les vraies données Gerber</h2>
       <p>AGBoard lit le Gerber RS-274X ainsi que les attributs de couches et d&#39;objets X2. Les données composants X3 peuvent fournir références, valeurs, boîtiers, types de montage, rotations et noms de nets directement depuis le jeu Gerber.</p>
-        <p>Ouvrez des couches seules, un fichier job Gerber ou une archive de fabrication. Cuivre interne, masque, sérigraphie, pâte, profil et perçages restent séparés pour faciliter l&#39;inspection.</p>
+        <p>Ouvrez des couches seules, un fichier job Gerber ou une archive de fabrication. Cuivre interne, masque, sérigraphie, pâte, profil et perçages restent séparés pour faciliter l&#39;inspection. Un fichier Gerber ou de perçage qui s&#39;arrête avant sa commande de fin est signalé comme peut-être tronqué &mdash; le plus souvent un téléchargement interrompu &mdash; et ce qu&#39;il contient reste affiché.</p>
     </section>
 
     <section class="section reveal">
@@ -144,7 +145,7 @@
 </article>
           <article class="format-capability">
   <h3>Rôle des couches</h3>
-  <p>Les attributs X2 identifient le cuivre, le masque, la sérigraphie, le profil et les autres rôles de fabrication.</p>
+  <p>Les attributs X2 identifient le cuivre, le masque, la sérigraphie, le profil et les autres rôles de fabrication. Les jeux photoplot Zuken sont reconnus par leur index <code>.phl</code> : chaque film <code>.phd</code> se place du côté de la carte auquel il appartient. Les jeux Zuken CR-8000 sont lus à partir de leur liste de films <code>.fpl</code>, qui désigne les films de cuivre et de crème à braser. Un fichier à l&#39;extension inhabituelle (OrCAD, VeriBest, gEDA…) est reconnu d&#39;après son contenu.</p>
 </article>
           <article class="format-capability">
   <h3>Intelligence X3</h3>
@@ -161,7 +162,7 @@
           <li>Suivre le cuivre physiquement connecté sans netlist séparée</li>
           <li>Déplacer, dupliquer, redimensionner, tourner et panéliser les formes éditables</li>
           <li>Inspecter la carte reconstruite dans une vue 3D interactive</li>
-          <li>Exporter Gerber, perçages Excellon, .gbrjob, PNG, PDF et résultats CSV</li>
+          <li>Exporter Gerber, perçages Excellon, .gbrjob, PNG, PDF et résultats CSV &mdash; ou convertir le jeu en ODB++, IPC-2581 ou DXF</li>
       </ul>
     </section>
 
@@ -230,6 +231,6 @@
       <a href="mentions-legales.html">Mentions légales</a>
     </nav>
   </footer>
-  <script src="../assets/site.js?v=20260725" defer></script>
+  <script src="../assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

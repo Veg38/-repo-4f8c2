@@ -27,7 +27,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/pcb-measure-edit-panelize.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/pcb-measure-edit-panelize.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/mesurer-modifier-paneliser-pcb.html">
-  <link rel="stylesheet" href="assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -110,22 +110,23 @@
     </section>
 
     <section class="section format-copy reveal"><h2>Precise operations with visible results</h2><p>Choose <b>Edges</b>, <b>Centers</b> or <b>Points</b>, then select the two references to measure. AGBoard displays the dimension directly on the board with distance, horizontal and vertical offsets, angle, true clearance or overlap.</p>
-      <p>Editing tools operate on supported source geometry. Move, duplicate, resize or delete selected shapes, apply group transforms and preview panelization before committing it.</p></section>
+      <p>Editing tools operate on supported source geometry. Move, duplicate, resize or delete selected shapes, apply group transforms and repeat the whole board into a panel.</p></section>
     <section class="section reveal"><h2>What you can inspect</h2><div class="format-grid"><article class="format-capability"><h3>Measurements</h3><p>Measure edge-to-edge, center-to-center or point-to-point, snap to objects or the grid, review the history and export the results as CSV.</p></article>
-        <article class="format-capability"><h3>Shape editing</h3><p>Adjust supported dimensions and corner radius with a live preview before applying the change.</p></article>
-        <article class="format-capability"><h3>Panelization</h3><p>Choose rows, columns and pitch to duplicate selected board geometry into a regular panel.</p></article></div></section>
+        <article class="format-capability"><h3>Shape editing</h3><p>Adjust supported dimensions and corner radius with a live preview before applying the change. Width, height and angle are the shape's own, and a shape built from several openings can be taken apart, edited piece by piece and put back as one object.</p></article>
+        <article class="format-capability"><h3>Stencil area ratio</h3><p>Screen a solder-paste stencil against IPC-7525C — opening area over aperture-wall area, and width over foil thickness — and export the report as CSV or PDF. You pick the stencil layer and state the foil thickness, which no PCB file carries. For a step stencil, long-press and drag over the board to draw each step zone: the openings across its edge light up, since their foil is not defined. Declared text, legend and fiducials are left out of the count; any other artwork you know takes no paste, you leave out yourself — from the list, or with a tap on the board — and the report says it was you.</p></article>
+        <article class="format-capability"><h3>Panelization</h3><p>Repeat the whole board — every layer, with its components — up to 50 × 50 times. It is a step and repeat, not copies: an edit in one copy is an edit in all, a panel takes the memory of one board, and Gerber, ODB++ and IPC-2581 exports keep it as a step and repeat. Detach the copies when each must change on its own.</p></article></div></section>
     <section class="section reveal"><h2>What you can do</h2><ul class="check-list"><li>Measure the true edge-to-edge clearance between two pads or shapes</li>
         <li>Switch between edge, center and free-point dimensions</li>
         <li>Read dx, dy, angle, overlap and the measured witness points</li>
         <li>Move, duplicate, resize or delete supported shapes</li>
         <li>Rotate, mirror or reset a layer or multi-selection</li>
-        <li>Preview rows, columns and spacing before panelization</li>
+        <li>Panelize the whole board, then remove the panel or detach its copies</li>
         <li>Export measurements, reports, images and printable PDF</li></ul></section>
     <section class="section use-case-visual reveal">
       <figure><img src="assets/shots/iphone-measure.png" alt="AGBoard measuring the true edge-to-edge clearance between two PCB pads" loading="lazy"><figcaption>The dimension stays attached to the measured edges and remains readable while you zoom or pan</figcaption></figure>
     </section>
     <section class="section reveal"><h2>Frequently asked questions</h2><div class="faq"><details><summary>Can AGBoard measure actual clearances?</summary><p>Yes. Edge mode places the dimension on the nearest physical edges and reports clearance or overlap. Center and point modes remain available for placement and mechanical dimensions.</p></details>
-        <details><summary>Does panelization change the original immediately?</summary><p>No. The panel setup provides a preview and is applied only after confirmation.</p></details>
+        <details><summary>Does panelization change the original immediately?</summary><p>No. The panel is applied when you tap Apply, and the source file is never modified: Remove panel, or Undo, returns to the single board.</p></details>
         <details><summary>Can every imported property be edited?</summary><p>Editing depends on what the source format can represent safely. AGBoard keeps unsupported operations explicit instead of silently approximating board data.</p></details></div></section>
     <section class="section reveal">
       <h2>Explore more of AGBoard</h2>
@@ -149,6 +150,6 @@
       <a href="legal.html">Legal</a>
     </nav>
   </footer>
-  <script src="assets/site.js?v=20260725" defer></script>
+  <script src="assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

@@ -26,7 +26,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/privacy.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/privacy.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/privacy.html">
-  <link rel="stylesheet" href="assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="assets/styles.css?v=20261025-consent">
 </head>
 <body>
   <header class="site-header">
@@ -45,7 +45,7 @@
   <main class="section narrow legal-page">
     <p class="eyebrow">Privacy</p>
     <h1>Privacy Policy</h1>
-    <p class="lead muted">Last updated: 16 August 2026</p>
+    <p class="lead muted">Last updated: 25 October 2026</p>
 
     <section>
       <p>AGBoard - PCBEditor ("the app") processes your PCB files entirely on your device. We do not collect, track, sell or share your personal data. This policy explains the app's limited network use and what stays local.</p>
@@ -58,12 +58,13 @@
 
     <section>
       <h2>Your PCB files</h2>
-      <p>Gerber, Excellon, DXF, ODB++, Eagle, Landrex BoardView, netlist and component placement files that you open are read and processed locally on your iPhone or iPad. They are never uploaded to us or to any third party. Once App Store access has been verified, viewing and editing your boards does not use an AGBoard server.</p>
+      <p>Gerber, Excellon, DXF, ODB++, Eagle, Landrex BoardView, netlist and component placement files that you open are read and processed locally on your iPhone or iPad. They are never uploaded to us or to any third party. Once App Store access has been verified, viewing and editing your boards does not use an AGBoard server. The thumbnails and previews the app draws in the Files app are made the same way: by the app's own extensions, on your device, from the file itself.</p>
     </section>
 
     <section>
       <h2>Version verification</h2>
       <p>When the app starts or becomes active, it requests <code>https://agboard-app.com/version.json</code> only to compare the installed version with the latest published version, so it can offer an update you are free to dismiss. The request does not include PCB files, account or payment data, or an identifier used for analytics or advertising. As with any HTTPS connection, the hosting service receives the IP address needed to return the file; AGBoard does not use this request for tracking.</p>
+      <p>When — and only when — such an update is offered, the app also requests <code>https://itunes.apple.com/lookup</code> to read the release notes Apple publishes for that version, so they can be shown to you before you decide. That request carries nothing but the app's own App Store identifier: no PCB files, no account, payment or device data, and no identifier used for analytics or advertising. Apple receives the IP address needed to answer it, as with any HTTPS connection.</p>
     </section>
 
     <section>
@@ -73,7 +74,7 @@
 
     <section>
       <h2>Settings stored on your device</h2>
-      <p>The app stores your preferences (such as display options, saved component parser profiles and recent files) and the number of free file opens already used locally on your device. The free-open counter is also kept in the iOS Keychain so a normal reinstall on the same device does not reset it. This information stays on your device and is not transmitted to us.</p>
+      <p>The app stores your preferences (such as display options, saved component parser profiles and recent files) and the number of free file opens already used locally on your device. The free-open counter is also kept in the iOS Keychain so a normal reinstall on the same device does not reset it. Whether your subscription is active, and until when, is kept in storage shared only between the app and its own Files extensions, so they know whether to draw a preview. This information stays on your device and is not transmitted to us.</p>
     </section>
 
     <section>
@@ -84,6 +85,7 @@
     <section>
       <h2>Sharing and exports</h2>
       <p>When you export a PNG, PDF, CSV report or project file, that file is created on your device and shared only through the destinations you choose via the standard iOS share sheet. Those destinations (for example Mail or Files) are governed by their own privacy policies.</p>
+      <p>If you tap <strong>Send to developer</strong>, the app prepares an email to support with a description of the problem and, only if you choose it, the file concerned attached. Nothing is sent by the app: the message reaches us only if you send it from your own email account, and we use it only to answer you and fix the problem.</p>
     </section>
 
     <section>
@@ -111,6 +113,13 @@
         that is the CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
     </section>
 
+    <section id="website-analytics">
+      <h2>Website analytics and cookies</h2>
+      <p>This section concerns the website only, not the AGBoard app. With your consent, this website loads Google Analytics (Google tag G-Z0X5FF64JF) to measure visits, traffic sources and pages viewed. Google may receive technical information such as your IP address, browser and device information, and cookie identifiers. Analytics cookies may remain for up to 180 days. Advertising storage, advertising personalization and Google signals are disabled by this integration.</p>
+      <p>No Google Analytics script or request is loaded before you accept, or if you refuse. Both choices are offered equally and are remembered in your browser's local storage for 180 days. You can change your choice at any time using “Cookie settings” in the footer. Refusing after accepting disables further collection and removes accessible Analytics cookies; it does not erase data already sent to Google. Refusing does not affect access to the website.</p>
+      <p>Google processes Analytics data and may process it outside your country. See <a href="https://policies.google.com/privacy">Google's privacy policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner sites</a>. For privacy questions or requests, contact <a href="mailto:support@agboard-app.com">support@agboard-app.com</a>.</p>
+    </section>
+
     <section>
       <h2>Changes to this policy</h2>
       <p>If this policy changes, we will update this page and revise the date above.</p>
@@ -132,6 +141,6 @@
       <a href="legal.html">Legal</a>
     </nav>
   </footer>
-  <script src="assets/site.js?v=20260725" defer></script>
+  <script src="assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

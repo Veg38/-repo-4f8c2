@@ -26,7 +26,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/privacy.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/privacy.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/privacy.html">
-  <link rel="stylesheet" href="../assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="../assets/styles.css?v=20261025-consent">
 </head>
 <body>
   <header class="site-header">
@@ -45,7 +45,7 @@
   <main class="section narrow legal-page">
     <p class="eyebrow">Confidentialité</p>
     <h1>Politique de confidentialité</h1>
-    <p class="lead muted">Dernière mise à jour : 16 août 2026</p>
+    <p class="lead muted">Dernière mise à jour : 25 octobre 2026</p>
 
     <section>
       <p>AGBoard - PCBEditor (« l'app ») traite vos fichiers PCB entièrement sur votre appareil. Nous ne collectons, ne pistons, ne vendons ni ne partageons aucune donnée personnelle. Cette page décrit l'usage réseau limité de l'app et les données qui restent locales.</p>
@@ -58,12 +58,13 @@
 
     <section>
       <h2>Vos fichiers PCB</h2>
-      <p>Les fichiers Gerber, Excellon, DXF, ODB++, Eagle, Landrex BoardView, netlists et placements de composants que vous ouvrez sont lus et traités localement sur votre iPhone ou iPad. Ils ne sont jamais transmis à nous ni à un tiers. Une fois l'accès App Store vérifié, l'affichage et la modification de vos cartes n'utilisent aucun serveur AGBoard.</p>
+      <p>Les fichiers Gerber, Excellon, DXF, ODB++, Eagle, Landrex BoardView, netlists et placements de composants que vous ouvrez sont lus et traités localement sur votre iPhone ou iPad. Ils ne sont jamais transmis à nous ni à un tiers. Une fois l'accès App Store vérifié, l'affichage et la modification de vos cartes n'utilisent aucun serveur AGBoard. Les vignettes et aperçus que l'app dessine dans l'app Fichiers sont produits de la même façon : par les extensions de l'app, sur votre appareil, à partir du fichier lui-même.</p>
     </section>
 
     <section>
       <h2>Vérification de version</h2>
       <p>Lorsque l'app démarre ou redevient active, elle demande <code>https://agboard-app.com/version.json</code> uniquement pour comparer la version installée à la dernière version publiée, afin de proposer une mise à jour que vous pouvez refuser. La requête ne contient aucun fichier PCB, aucune donnée de compte ou de paiement, ni identifiant utilisé pour l'analyse ou la publicité. Comme pour toute connexion HTTPS, l'hébergeur reçoit l'adresse IP nécessaire pour renvoyer le fichier ; AGBoard n'utilise pas cette requête à des fins de pistage.</p>
+      <p>Lorsqu'une telle mise à jour est proposée — et seulement dans ce cas — l'app demande également <code>https://itunes.apple.com/lookup</code> afin de lire les notes de version publiées par Apple pour cette version, pour vous les montrer avant votre choix. Cette requête ne contient que l'identifiant App Store de l'app : aucun fichier PCB, aucune donnée de compte, de paiement ou d'appareil, ni identifiant utilisé pour l'analyse ou la publicité. Apple reçoit l'adresse IP nécessaire pour y répondre, comme pour toute connexion HTTPS.</p>
     </section>
 
     <section>
@@ -73,7 +74,7 @@
 
     <section>
       <h2>Réglages stockés sur votre appareil</h2>
-      <p>L'app enregistre localement sur votre appareil vos préférences (options d'affichage, profils d'analyse de composants et fichiers récents), ainsi que le nombre d'ouvertures gratuites déjà utilisées. Ce compteur est aussi conservé dans le trousseau iOS afin qu'une réinstallation normale sur le même appareil ne le réinitialise pas. Ces informations restent sur votre appareil et ne nous sont pas transmises.</p>
+      <p>L'app enregistre localement sur votre appareil vos préférences (options d'affichage, profils d'analyse de composants et fichiers récents), ainsi que le nombre d'ouvertures gratuites déjà utilisées. Ce compteur est aussi conservé dans le trousseau iOS afin qu'une réinstallation normale sur le même appareil ne le réinitialise pas. Le fait que votre abonnement soit actif, et jusqu'à quand, est conservé dans un espace partagé uniquement entre l'app et ses propres extensions Fichiers, pour qu'elles sachent si elles peuvent dessiner un aperçu. Ces informations restent sur votre appareil et ne nous sont pas transmises.</p>
     </section>
 
     <section>
@@ -84,6 +85,7 @@
     <section>
       <h2>Partage et exports</h2>
       <p>Lorsque vous exportez un PNG, un PDF, un rapport CSV ou un fichier projet, le fichier est créé sur votre appareil et partagé uniquement vers les destinations que vous choisissez via la feuille de partage iOS. Ces destinations (Mail, Fichiers…) relèvent de leurs propres politiques de confidentialité.</p>
+      <p>Si vous touchez <strong>Send to developer</strong>, l'app prépare un e-mail au support avec une description du problème et, seulement si vous le choisissez, le fichier concerné en pièce jointe. L'app n'envoie rien elle-même : le message ne nous parvient que si vous l'envoyez depuis votre propre compte e-mail, et nous ne l'utilisons que pour vous répondre et corriger le problème.</p>
     </section>
 
     <section>
@@ -110,6 +112,12 @@
       <p>Vous avez également le droit d'introduire une réclamation auprès d'une autorité de
         contrôle. En France, il s'agit de la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
     </section>
+    <section id="website-analytics">
+      <h2>Statistiques du site et cookies</h2>
+      <p>Cette section concerne uniquement le site web, pas l'application AGBoard. Avec votre consentement, le site charge Google Analytics (balise Google G-Z0X5FF64JF) pour mesurer les visites, leur provenance et les pages consultées. Google peut recevoir des informations techniques telles que votre adresse IP, des informations sur votre navigateur et votre appareil, et des identifiants de cookies. Les cookies de mesure peuvent rester jusqu'à 180 jours. Cette intégration désactive le stockage publicitaire, la personnalisation publicitaire et les signaux Google.</p>
+      <p>Aucun script ni requête Google Analytics n'est chargé avant votre acceptation ou en cas de refus. Les deux choix sont proposés de manière équivalente et mémorisés dans le stockage local de votre navigateur pendant 180 jours. Vous pouvez modifier votre choix à tout moment via « Gestion des cookies » dans le pied de page. Refuser après avoir accepté désactive les collectes suivantes et supprime les cookies Analytics accessibles ; cela n'efface pas les données déjà transmises à Google. Refuser n'empêche pas d'utiliser le site.</p>
+      <p>Google traite les données Analytics et peut les traiter en dehors de votre pays. Consultez <a href="https://policies.google.com/privacy?hl=fr">la politique de confidentialité de Google</a> et <a href="https://policies.google.com/technologies/partner-sites?hl=fr">les informations sur les sites partenaires de Google</a>. Pour toute question ou demande relative à vos données, écrivez à <a href="mailto:support@agboard-app.com">support@agboard-app.com</a>.</p>
+    </section>
     <section>
       <h2>Évolution de cette politique</h2>
       <p>Si cette politique change, nous mettrons cette page à jour et réviserons la date ci-dessus.</p>
@@ -131,6 +139,6 @@
       <a href="mentions-legales.html">Mentions légales</a>
     </nav>
   </footer>
-  <script src="../assets/site.js?v=20260725" defer></script>
+  <script src="../assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

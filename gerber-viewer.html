@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/gerber-viewer.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/gerber-viewer.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-gerber.html">
-  <link rel="stylesheet" href="assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -121,6 +121,7 @@
           <li><code>.gko</code></li>
           <li><code>.gm1</code></li>
           <li><code>.gbrjob</code></li>
+          <li><code>.phd</code></li>
         </ul>
         <div class="actions">
           <a href="https://apps.apple.com/app/id6784736690" aria-label="Download AGBoard on the App Store"><img src="assets/app-store-badge.svg" alt="Download on the App Store" height="46"></a>
@@ -132,7 +133,7 @@
     <section class="section format-copy reveal">
       <h2>A mobile workspace for real Gerber data</h2>
       <p>AGBoard reads Gerber RS-274X as well as X2 layer and object attributes. X3 component data can provide references, values, packages, mount types, rotations and net names directly from the Gerber set.</p>
-        <p>Open individual layers, a Gerber job file or a fabrication archive. Inner copper, solder mask, silkscreen, paste, profile and drill data stay separated so the board remains easy to inspect.</p>
+        <p>Open individual layers, a Gerber job file or a fabrication archive. Inner copper, solder mask, silkscreen, paste, profile and drill data stay separated so the board remains easy to inspect. A Gerber or drill file that stops before its end command is reported as possibly cut short &mdash; an interrupted download, usually &mdash; and what it holds is still shown.</p>
     </section>
 
     <section class="section reveal">
@@ -144,7 +145,7 @@
 </article>
           <article class="format-capability">
   <h3>Layer identity</h3>
-  <p>X2 file attributes identify copper, mask, silkscreen, profile and other manufacturing roles.</p>
+  <p>X2 file attributes identify copper, mask, silkscreen, profile and other manufacturing roles. Zuken photoplot sets are recognised through their <code>.phl</code> index, so each <code>.phd</code> film lands on the side of the board it belongs to. Zuken CR-8000 sets are read from their <code>.fpl</code> photo list, which names the copper and solder-paste films. A file with an unusual extension (OrCAD, VeriBest, gEDA…) is recognised by its content.</p>
 </article>
           <article class="format-capability">
   <h3>X3 intelligence</h3>
@@ -161,7 +162,7 @@
           <li>Trace physically connected copper without a separate netlist</li>
           <li>Move, duplicate, resize, rotate and panelize editable geometry</li>
           <li>Inspect the reconstructed board in an interactive 3D view</li>
-          <li>Export Gerber, Excellon drill, .gbrjob, PNG, PDF and CSV results</li>
+          <li>Export Gerber, Excellon drill, .gbrjob, PNG, PDF and CSV results &mdash; or convert the set to ODB++, IPC-2581 or DXF</li>
       </ul>
     </section>
 
@@ -230,6 +231,6 @@
       <a href="legal.html">Legal</a>
     </nav>
   </footer>
-  <script src="assets/site.js?v=20260725" defer></script>
+  <script src="assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

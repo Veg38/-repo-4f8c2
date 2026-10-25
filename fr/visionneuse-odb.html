@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/odb-viewer.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/odb-viewer.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-odb.html">
-  <link rel="stylesheet" href="../assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="../assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -118,6 +118,8 @@
           <li><code>.tgz</code></li>
           <li><code>.tar</code></li>
           <li><code>.tar.gz</code></li>
+          <li><code>.7z</code></li>
+          <li><code>.tar.xz</code></li>
         </ul>
         <div class="actions">
           <a href="https://apps.apple.com/app/id6784736690" aria-label="Télécharger AGBoard dans l'App Store"><img src="../assets/app-store-badge.svg" alt="Télécharger dans l'App Store" height="46"></a>
@@ -129,7 +131,7 @@
     <section class="section format-copy reveal">
       <h2>Conserver toute la structure du job ODB++</h2>
       <p>AGBoard lit la matrice ODB++, les steps, couches, features, données composants et informations de nets EDA. Les panneaux sont dépliés dans la vue tout en conservant l&#39;organisation des données par couche.</p>
-        <p>Les jobs volumineux s&#39;ouvrent avec une progression visible et utilisent le même canvas accéléré que les projets Gerber, pour inspecter les données de production sur iPhone ou iPad.</p>
+        <p>Les jobs volumineux et compressés s&#39;ouvrent rapidement, avec une progression visible, et utilisent le même canvas accéléré que les projets Gerber, pour inspecter les données de production sur iPhone ou iPad.</p>
     </section>
 
     <section class="section reveal">
@@ -137,7 +139,7 @@
       <div class="format-grid">
         <article class="format-capability">
   <h3>Empilage</h3>
-  <p>Rôles cuivre, masque, sérigraphie, pâte, perçage, routage, document et contour issus de la matrice du job.</p>
+  <p>Rôles cuivre, masque, sérigraphie, pâte, perçage, routage, document et contour issus de la matrice du job, avec l&#39;épaisseur de carte et les profondeurs de cuivre interne que déclare le job.</p>
 </article>
           <article class="format-capability">
   <h3>Panneaux et géométrie</h3>
@@ -145,7 +147,7 @@
 </article>
           <article class="format-capability">
   <h3>Données d&#39;assemblage</h3>
-  <p>Références composants, boîtiers, pins, placement top ou bottom et relations de nets logiques.</p>
+  <p>Références composants, boîtiers, pins, placement top ou bottom et relations de nets logiques. En 3D, les composants prennent la hauteur et le contour de boîtier que leur donne le job, et la carte prend le profil du step comme contour &mdash; pas un cadre de panneau.</p>
 </article>
       </div>
     </section>
@@ -158,7 +160,7 @@
           <li>Inspecter chaque couche de fabrication ou la carte combinée</li>
           <li>Mesurer pads, trous, distances, jeux et dimensions</li>
           <li>Explorer substrat, cuivre, perçages et composants en 3D</li>
-          <li>Réenregistrer les modifications compatibles en ODB++ et exporter des rapports</li>
+          <li>Réenregistrer les modifications compatibles en ODB++, convertir le job en IPC-2581 ou DXF, et exporter des rapports</li>
       </ul>
     </section>
 
@@ -182,7 +184,7 @@
       <div class="faq">
         <details>
   <summary>Quels packages ODB++ puis-je ouvrir ?</summary>
-  <p>AGBoard accepte un dossier ODB++ et les archives courantes .zip, .tgz, .tar et .tar.gz.</p>
+  <p>AGBoard accepte un dossier ODB++ et les archives courantes .zip (ZIP64 compris), .7z, .tgz, .tar, .tar.gz, .tar.xz et .tar.bz2.</p>
 </details>
           <details>
   <summary>Les panneaux, composants et nets ODB++ sont-ils disponibles ?</summary>
@@ -227,6 +229,6 @@
       <a href="mentions-legales.html">Mentions légales</a>
     </nav>
   </footer>
-  <script src="../assets/site.js?v=20260725" defer></script>
+  <script src="../assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

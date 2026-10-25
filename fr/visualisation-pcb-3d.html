@@ -27,7 +27,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/3d-pcb-viewer.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/3d-pcb-viewer.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visualisation-pcb-3d.html">
-  <link rel="stylesheet" href="../assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="../assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -111,10 +111,10 @@
 
     <section class="section format-copy reveal"><h2>Une 3D qui reste liée aux données PCB</h2><p>AGBoard reconstruit le substrat depuis le profil de la carte et conserve les bords usinés et les perçages. Le cuivre et les composants disponibles sont positionnés dans les mêmes coordonnées.</p>
       <p>Sélectionnez le substrat ou un composant dans la scène, inspectez la face inférieure puis revenez aux données 2D correspondantes pour approfondir.</p></section>
-    <section class="section reveal"><h2>Ce que vous pouvez inspecter</h2><div class="format-grid"><article class="format-capability"><h3>Profil réel</h3><p>Le substrat suit le contour disponible de la carte au lieu d&#39;utiliser un rectangle générique.</p></article>
-        <article class="format-capability"><h3>Empilage</h3><p>Les couches cuivre et les trous conservent leur position relative dans l&#39;épaisseur reconstruite.</p></article>
-        <article class="format-capability"><h3>Composants placés</h3><p>Les composants apparaissent lorsque le fichier source fournit boîtier, face, position et rotation.</p></article></div></section>
-    <section class="section reveal"><h2>Ce que vous pouvez faire</h2><ul class="check-list"><li>Tourner et zoomer la carte PCB complète avec les gestes tactiles</li>
+    <section class="section reveal"><h2>Ce que vous pouvez inspecter</h2><div class="format-grid"><article class="format-capability"><h3>Profil réel</h3><p>Le substrat suit le contour disponible de la carte au lieu d&#39;utiliser un rectangle générique. En ODB++ et IPC-2581, c&#39;est le contour que déclare le fichier, découpes et lumières comprises &mdash; un cadre de panneau ne remplace jamais la carte.</p></article>
+        <article class="format-capability"><h3>Empilage</h3><p>Les couches cuivre et les trous conservent leur position relative dans l&#39;épaisseur déclarée par le fichier &mdash; 1,6 mm seulement quand il ne dit rien &mdash; et le cuivre interne se place aux profondeurs données par l&#39;empilage.</p></article>
+        <article class="format-capability"><h3>Composants placés</h3><p>Les composants apparaissent lorsque le fichier source fournit boîtier, face, position et rotation. Les composants ODB++ gardent la hauteur et le contour de boîtier que leur donne le fichier.</p></article></div></section>
+    <section class="section reveal"><h2>Ce que vous pouvez faire</h2><ul class="check-list"><li>Tourner la carte d&#39;un doigt, la déplacer à deux, pincer pour zoomer</li>
         <li>Passer sur la face inférieure sans perdre l&#39;orientation</li>
         <li>Inspecter contours usinés, découpes et perçages</li>
         <li>Sélectionner un composant directement dans la scène 3D</li>
@@ -148,6 +148,6 @@
       <a href="mentions-legales.html">Mentions légales</a>
     </nav>
   </footer>
-  <script src="../assets/site.js?v=20260725" defer></script>
+  <script src="../assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

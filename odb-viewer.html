@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/odb-viewer.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/odb-viewer.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-odb.html">
-  <link rel="stylesheet" href="assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -118,6 +118,8 @@
           <li><code>.tgz</code></li>
           <li><code>.tar</code></li>
           <li><code>.tar.gz</code></li>
+          <li><code>.7z</code></li>
+          <li><code>.tar.xz</code></li>
         </ul>
         <div class="actions">
           <a href="https://apps.apple.com/app/id6784736690" aria-label="Download AGBoard on the App Store"><img src="assets/app-store-badge.svg" alt="Download on the App Store" height="46"></a>
@@ -129,7 +131,7 @@
     <section class="section format-copy reveal">
       <h2>Keep the ODB++ job structure visible</h2>
       <p>AGBoard reads the ODB++ matrix, steps, layers, features, component data and EDA net information. Panel steps are expanded into the board view while their source data remains organized by layer.</p>
-        <p>Large jobs open with progress feedback and use the same accelerated canvas as Gerber projects, making dense production data practical to inspect on an iPhone or iPad.</p>
+        <p>Large and compressed jobs open quickly, with progress feedback, and use the same accelerated canvas as Gerber projects, making dense production data practical to inspect on an iPhone or iPad.</p>
     </section>
 
     <section class="section reveal">
@@ -137,7 +139,7 @@
       <div class="format-grid">
         <article class="format-capability">
   <h3>Layer stack</h3>
-  <p>Copper, mask, silkscreen, paste, drill, route, document and board-outline roles from the job matrix.</p>
+  <p>Copper, mask, silkscreen, paste, drill, route, document and board-outline roles from the job matrix, with the board thickness and inner copper depths the job states.</p>
 </article>
           <article class="format-capability">
   <h3>Panels and geometry</h3>
@@ -145,7 +147,7 @@
 </article>
           <article class="format-capability">
   <h3>Assembly data</h3>
-  <p>Component references, packages, pins, top or bottom placement and logical net relationships.</p>
+  <p>Component references, packages, pins, top or bottom placement and logical net relationships. In 3D, parts take the height and package outline the job gives them, and the board takes the step profile as its outline &mdash; not a panel frame.</p>
 </article>
       </div>
     </section>
@@ -158,7 +160,7 @@
           <li>Inspect individual manufacturing layers or the combined board</li>
           <li>Measure pads, holes, distances, clearances and dimensions</li>
           <li>Explore the substrate, copper, drills and components in 3D</li>
-          <li>Save compatible edits back to ODB++ and export visual or CSV reports</li>
+          <li>Save compatible edits back to ODB++, convert the job to IPC-2581 or DXF, and export visual or CSV reports</li>
       </ul>
     </section>
 
@@ -182,7 +184,7 @@
       <div class="faq">
         <details>
   <summary>Which ODB++ packages can I open?</summary>
-  <p>AGBoard accepts an ODB++ directory and common .zip, .tgz, .tar and .tar.gz archives.</p>
+  <p>AGBoard accepts an ODB++ directory and common .zip (ZIP64 included), .7z, .tgz, .tar, .tar.gz, .tar.xz and .tar.bz2 archives.</p>
 </details>
           <details>
   <summary>Are ODB++ panels, components and nets available?</summary>
@@ -227,6 +229,6 @@
       <a href="legal.html">Legal</a>
     </nav>
   </footer>
-  <script src="assets/site.js?v=20260725" defer></script>
+  <script src="assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

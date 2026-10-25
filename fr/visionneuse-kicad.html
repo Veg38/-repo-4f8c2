@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/kicad-viewer.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/kicad-viewer.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-kicad.html">
-  <link rel="stylesheet" href="../assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="../assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -107,15 +107,18 @@
     <section class="format-hero">
       <div class="format-hero-content">
         <nav class="breadcrumbs" aria-label="Fil d’Ariane">
-          <a href="./">Accueil</a><span aria-hidden="true">/</span><span>Cartes, projets et empreintes</span>
+          <a href="./">Accueil</a><span aria-hidden="true">/</span><span>Cartes, schémas, projets et empreintes</span>
         </nav>
-        <p class="eyebrow">Cartes, projets et empreintes</p>
+        <p class="eyebrow">Cartes, schémas, projets et empreintes</p>
         <h1>Visionneuse PCB KiCad native pour iPhone et iPad</h1>
-        <p class="lead">Emportez une carte KiCad native à l&#39;atelier ou sur le terrain. AGBoard ouvre cartes, projets voisins et empreintes individuelles avec leurs vraies données cuivre, sérigraphie, composants et nets.</p>
+        <p class="lead">Emportez une carte KiCad native à l&#39;atelier ou sur le terrain. AGBoard ouvre cartes, schémas, projets voisins, empreintes individuelles, bibliothèques de symboles et cartouches avec leurs vraies données cuivre, sérigraphie, composants et nets.</p>
         <ul class="format-extensions" aria-label="Extensions prises en charge">
           <li><code>.kicad_pcb</code></li>
+          <li><code>.kicad_sch</code></li>
           <li><code>.kicad_pro</code></li>
           <li><code>.kicad_mod</code></li>
+          <li><code>.kicad_sym</code></li>
+          <li><code>.kicad_wks</code></li>
         </ul>
         <div class="actions">
           <a href="https://apps.apple.com/app/id6784736690" aria-label="Télécharger AGBoard dans l'App Store"><img src="../assets/app-store-badge.svg" alt="Télécharger dans l'App Store" height="46"></a>
@@ -127,7 +130,7 @@
     <section class="section format-copy reveal">
       <h2>Inspecter la carte native, pas un aperçu aplati</h2>
       <p>AGBoard lit les cartes KiCad de la version 5 à la syntaxe actuelle, avec définitions de couches, pistes, arcs, vias, pads, zones, graphismes, sérigraphie, empreintes et noms de nets.</p>
-        <p>L&#39;ouverture d&#39;un projet .kicad_pro retrouve la carte voisine. Une empreinte .kicad_mod peut aussi être ouverte seule pour une inspection précise.</p>
+        <p>L&#39;ouverture d&#39;un projet .kicad_pro retrouve la carte voisine, ou son schéma si le projet n&#39;a pas de carte. Une empreinte .kicad_mod peut aussi être ouverte seule pour une inspection précise.</p>
     </section>
 
     <section class="section reveal">
@@ -179,8 +182,12 @@
       <h2>Questions fréquentes</h2>
       <div class="faq">
         <details>
+  <summary>Peut-elle ouvrir le schéma en plus de la carte ?</summary>
+  <p>Oui. Une feuille .kicad_sch est dessinée avec ses symboles, fils, jonctions, étiquettes de net, références et valeurs, et les feuilles hiérarchiques sont suivies automatiquement. Symboles, fils et texte arrivent en trois calques que l'on peut masquer séparément. Les fils portent leur nom de net et, comme un projet KiCad emploie les mêmes noms sur sa carte, une recherche de net le trouve sur l'un comme sur l'autre. Les schémas sont en lecture seule : ils ne contiennent aucune géométrie de fabrication, rien n'y est donc jamais réécrit.</p>
+</details>
+        <details>
   <summary>AGBoard exige-t-elle un export Gerber depuis KiCad ?</summary>
-  <p>Non. Elle ouvre directement les cartes .kicad_pcb, projets .kicad_pro et empreintes .kicad_mod.</p>
+  <p>Non. Elle ouvre directement les cartes .kicad_pcb, les schémas .kicad_sch, les projets .kicad_pro et les empreintes .kicad_mod.</p>
 </details>
           <details>
   <summary>Quelles données de carte sont disponibles ?</summary>
@@ -225,6 +232,6 @@
       <a href="mentions-legales.html">Mentions légales</a>
     </nav>
   </footer>
-  <script src="../assets/site.js?v=20260725" defer></script>
+  <script src="../assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

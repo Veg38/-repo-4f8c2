@@ -29,7 +29,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/kicad-viewer.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/kicad-viewer.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visionneuse-kicad.html">
-  <link rel="stylesheet" href="assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -109,13 +109,16 @@
         <nav class="breadcrumbs" aria-label="Breadcrumb">
           <a href="./">Home</a><span aria-hidden="true">/</span><span>Boards, projects and footprints</span>
         </nav>
-        <p class="eyebrow">Boards, projects and footprints</p>
+        <p class="eyebrow">Boards, schematics, projects and footprints</p>
         <h1>Native KiCad PCB viewer for iPhone and iPad</h1>
-        <p class="lead">Take a native KiCad board into the workshop or the field. AGBoard opens boards, neighboring project files and individual footprints with their real copper, silkscreen, component and net data.</p>
+        <p class="lead">Take a native KiCad design into the workshop or the field. AGBoard opens boards, schematics, neighboring project files, individual footprints, symbol libraries and drawing sheets with their real copper, silkscreen, component and net data.</p>
         <ul class="format-extensions" aria-label="Supported extensions">
           <li><code>.kicad_pcb</code></li>
+          <li><code>.kicad_sch</code></li>
           <li><code>.kicad_pro</code></li>
           <li><code>.kicad_mod</code></li>
+          <li><code>.kicad_sym</code></li>
+          <li><code>.kicad_wks</code></li>
         </ul>
         <div class="actions">
           <a href="https://apps.apple.com/app/id6784736690" aria-label="Download AGBoard on the App Store"><img src="assets/app-store-badge.svg" alt="Download on the App Store" height="46"></a>
@@ -127,7 +130,7 @@
     <section class="section format-copy reveal">
       <h2>Inspect the native board, not a flattened preview</h2>
       <p>AGBoard reads KiCad boards from version 5 through current syntax, including layer definitions, tracks, arcs, vias, pads, zones, board graphics, silkscreen text, footprints and net names.</p>
-        <p>Opening a .kicad_pro project locates its neighboring board. A .kicad_mod footprint can also open independently for close inspection.</p>
+        <p>Opening a .kicad_pro project locates its neighboring board, or its schematic when the project has no board. A .kicad_mod footprint can also open independently for close inspection.</p>
     </section>
 
     <section class="section reveal">
@@ -179,8 +182,12 @@
       <h2>Frequently asked questions</h2>
       <div class="faq">
         <details>
+  <summary>Can it open the schematic as well as the board?</summary>
+  <p>Yes. A .kicad_sch sheet is drawn with its symbols, wires, junctions, net labels, references and values, and hierarchical sheets are followed automatically. Symbols, wires and text arrive as three layers you can hide separately. Wires carry their net name, and because a KiCad project uses the same names on its board, a net search finds it on either. Schematics are read only — they hold no manufacturing geometry, so nothing is ever written back to them.</p>
+</details>
+        <details>
   <summary>Does AGBoard require a Gerber export from KiCad?</summary>
-  <p>No. It opens .kicad_pcb boards, .kicad_pro projects and .kicad_mod footprints directly.</p>
+  <p>No. It opens .kicad_pcb boards, .kicad_sch schematics, .kicad_pro projects and .kicad_mod footprints directly.</p>
 </details>
           <details>
   <summary>Which board data is available?</summary>
@@ -225,6 +232,6 @@
       <a href="legal.html">Legal</a>
     </nav>
   </footer>
-  <script src="assets/site.js?v=20260725" defer></script>
+  <script src="assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

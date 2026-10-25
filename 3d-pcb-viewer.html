@@ -27,7 +27,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/3d-pcb-viewer.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/3d-pcb-viewer.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/visualisation-pcb-3d.html">
-  <link rel="stylesheet" href="assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -111,10 +111,10 @@
 
     <section class="section format-copy reveal"><h2>3D that remains connected to the PCB data</h2><p>AGBoard reconstructs the substrate from the board profile and keeps routed edges and drill holes visible. Copper and available component placement data are positioned against the same board coordinates.</p>
       <p>Select the substrate or a component directly in the scene, inspect the bottom side and return to the corresponding 2D data whenever more detail is needed.</p></section>
-    <section class="section reveal"><h2>What you can inspect</h2><div class="format-grid"><article class="format-capability"><h3>Real profile</h3><p>The substrate follows the available board outline instead of using a generic rectangle.</p></article>
-        <article class="format-capability"><h3>Layer stack</h3><p>Copper layers and holes retain their relative position through the reconstructed board thickness.</p></article>
-        <article class="format-capability"><h3>Placed parts</h3><p>Components are shown when supported source data provides their package, side, position and rotation.</p></article></div></section>
-    <section class="section reveal"><h2>What you can do</h2><ul class="check-list"><li>Rotate and zoom the complete PCB with touch gestures</li>
+    <section class="section reveal"><h2>What you can inspect</h2><div class="format-grid"><article class="format-capability"><h3>Real profile</h3><p>The substrate follows the available board outline instead of using a generic rectangle. For ODB++ and IPC-2581 it is the outline the file states, cut-outs and slots included &mdash; a panel frame never stands in for the board.</p></article>
+        <article class="format-capability"><h3>Layer stack</h3><p>Copper layers and holes retain their relative position through the board thickness the file states &mdash; 1.6 mm only when it states nothing &mdash; and inner copper sits at the depths the stack-up gives.</p></article>
+        <article class="format-capability"><h3>Placed parts</h3><p>Components are shown when supported source data provides their package, side, position and rotation. ODB++ parts keep the height and package outline the file gives them.</p></article></div></section>
+    <section class="section reveal"><h2>What you can do</h2><ul class="check-list"><li>Turn the board with one finger, move it with two, pinch to zoom</li>
         <li>Flip to the bottom side without losing board orientation</li>
         <li>Inspect routed edges, cutouts and drilled holes</li>
         <li>Select a component directly from the 3D scene</li>
@@ -148,6 +148,6 @@
       <a href="legal.html">Legal</a>
     </nav>
   </footer>
-  <script src="assets/site.js?v=20260725" defer></script>
+  <script src="assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>

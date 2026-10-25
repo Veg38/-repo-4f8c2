@@ -27,7 +27,7 @@
   <link rel="alternate" hreflang="en" href="https://agboard-app.com/pcb-measure-edit-panelize.html">
   <link rel="alternate" hreflang="x-default" href="https://agboard-app.com/pcb-measure-edit-panelize.html">
   <link rel="alternate" hreflang="fr" href="https://agboard-app.com/fr/mesurer-modifier-paneliser-pcb.html">
-  <link rel="stylesheet" href="../assets/styles.css?v=20260823">
+  <link rel="stylesheet" href="../assets/styles.css?v=20261025-consent">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -110,22 +110,23 @@
     </section>
 
     <section class="section format-copy reveal"><h2>Des opérations précises avec un résultat visible</h2><p>Choisissez <b>Bords</b>, <b>Centres</b> ou <b>Points</b>, puis sélectionnez les deux références. AGBoard affiche la cote directement sur la carte avec distance, décalages horizontal et vertical, angle, jeu réel ou chevauchement.</p>
-      <p>Les outils de modification agissent sur les géométries source prises en charge. Déplacez, dupliquez, redimensionnez ou supprimez, appliquez des transformations groupées et prévisualisez la panélisation.</p></section>
+      <p>Les outils de modification agissent sur les géométries source prises en charge. Déplacez, dupliquez, redimensionnez ou supprimez, appliquez des transformations groupées et répétez toute la carte en panneau.</p></section>
     <section class="section reveal"><h2>Ce que vous pouvez inspecter</h2><div class="format-grid"><article class="format-capability"><h3>Mesures</h3><p>Mesurez bord à bord, centre à centre ou point à point, avec aimantage aux objets ou à la grille, historique et export CSV.</p></article>
-        <article class="format-capability"><h3>Modification</h3><p>Ajustez dimensions et rayon d&#39;angle pris en charge avec une prévisualisation avant application.</p></article>
-        <article class="format-capability"><h3>Panélisation</h3><p>Choisissez lignes, colonnes et pas pour dupliquer la géométrie sélectionnée dans un panneau régulier.</p></article></div></section>
+        <article class="format-capability"><h3>Modification</h3><p>Ajustez dimensions et rayon d&#39;angle pris en charge avec une prévisualisation avant application. La largeur, la hauteur et l&#39;angle sont ceux de la forme, et une forme composée de plusieurs ouvertures se démonte, se modifie morceau par morceau et se remonte en un seul objet.</p></article>
+        <article class="format-capability"><h3>Rapport de surface du pochoir</h3><p>Contrôlez un pochoir de pâte à braser selon l'IPC-7525C &mdash; surface d'ouverture sur surface de paroi, et largeur sur épaisseur du feuillard &mdash; et exportez le rapport en CSV ou en PDF. Vous désignez la couche et donnez l'épaisseur du feuillard, qu'aucun fichier de CAO ne porte. Pour un pochoir à gradins, tracez chaque zone de step d'un appui long glissé sur la carte : les ouvertures à cheval sur son bord s'éclairent, leur épaisseur n'étant pas définie. Le texte, la légende et les fiducials déclarés ne sont pas comptés ; tout autre dessin dont vous savez qu'il ne reçoit pas de pâte, vous l'écartez vous-même &mdash; depuis la liste, ou d'une touche sur la carte &mdash; et le rapport dit que c'est vous.</p></article>
+        <article class="format-capability"><h3>Panélisation</h3><p>Répétez toute la carte — chaque calque, avec ses composants — jusqu'à 50 × 50 fois. C'est un step and repeat, pas des copies : une modification dans une copie vaut pour toutes, un panneau occupe la mémoire d'une seule carte, et les exports Gerber, ODB++ et IPC-2581 le gardent en step and repeat. Détachez les copies quand chacune doit changer seule.</p></article></div></section>
     <section class="section reveal"><h2>Ce que vous pouvez faire</h2><ul class="check-list"><li>Mesurer le jeu réel bord à bord entre deux pads ou deux formes</li>
         <li>Basculer entre cotes sur les bords, les centres et deux points libres</li>
         <li>Lire dx, dy, angle, chevauchement et points de cote</li>
         <li>Déplacer, dupliquer, redimensionner ou supprimer les formes prises en charge</li>
         <li>Tourner, retourner ou réinitialiser une couche ou une sélection multiple</li>
-        <li>Prévisualiser lignes, colonnes et espacement avant panélisation</li>
+        <li>Panéliser toute la carte, puis retirer le panneau ou en détacher les copies</li>
         <li>Exporter mesures, rapports, images et PDF imprimables</li></ul></section>
     <section class="section use-case-visual reveal">
       <figure><img src="../assets/shots/iphone-measure.png" alt="AGBoard mesurant le jeu réel bord à bord entre deux pads PCB" loading="lazy"><figcaption>La cote reste attachée aux bords mesurés et lisible pendant le zoom ou le déplacement</figcaption></figure>
     </section>
     <section class="section reveal"><h2>Questions fréquentes</h2><div class="faq"><details><summary>AGBoard peut-elle mesurer les jeux réels ?</summary><p>Oui. Le mode Bords place la cote sur les bords physiques les plus proches et indique le jeu ou le chevauchement. Les modes Centres et Points restent disponibles pour les cotes de placement et mécaniques.</p></details>
-        <details><summary>La panélisation modifie-t-elle immédiatement l&#39;original ?</summary><p>Non. Le réglage du panneau affiche une prévisualisation et ne s&#39;applique qu&#39;après confirmation.</p></details>
+        <details><summary>La panélisation modifie-t-elle immédiatement l&#39;original ?</summary><p>Non. Le panneau s&#39;applique quand vous touchez Apply, et le fichier source n&#39;est jamais modifié : Remove panel, ou Annuler, revient à la carte seule.</p></details>
         <details><summary>Toutes les propriétés importées sont-elles modifiables ?</summary><p>La modification dépend de ce que le format source peut représenter correctement. AGBoard garde les opérations non prises en charge explicites au lieu d&#39;approximer les données en silence.</p></details></div></section>
     <section class="section reveal">
       <h2>Continuer à explorer AGBoard</h2>
@@ -149,6 +150,6 @@
       <a href="mentions-legales.html">Mentions légales</a>
     </nav>
   </footer>
-  <script src="../assets/site.js?v=20260725" defer></script>
+  <script src="../assets/site.js?v=20261025-consent" defer></script>
 </body>
 </html>
